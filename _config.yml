@@ -18,38 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Open Systems Pharmacology
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Reliable, powerful and easy-to-use modeling &amp; simulation tools for pharmaceutical 
+  and other life-sciences applications. Qualified and accepted by the scientific community 
+  including academia, regulatory agencies and industry. Available free to everyone.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+base: open-systems-pharmacology.org # the base hostname & protocol for your site, e.g. http://example.com
+github: https://github.com/localtest-open-systems-pharmacology.github.io
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 theme: minima
-plugins:
+gems:
   - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+collections:
+  news:
+    output: false
+    permalink: /:collection/:name
+  examples:
+    output: false
+    permalink: /:collection/:name
+  tutorials:
+    output: false
+    permalink: /:collection/:name
+  publications:
+    output: false
+    permalink: /:collection/:name
+  team:
+    output: false
+    permalink: /:collection/:name

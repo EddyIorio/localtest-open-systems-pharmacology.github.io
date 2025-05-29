@@ -1,0 +1,33 @@
+#cookieConsent {
+  background-color: rgba(20, 20, 20, 0.8);
+  min-height: 26px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 26px;
+  padding: 20px 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  position: sticky;
+  bottom: 0;
+  display: block;
+  z-index: 9999;
+  text-align: center;
+
+  span {
+    display: inline-block;
+  }
+
+  a.cookieConsentOK {
+    background-color: $default-button-action-background-color;
+    color: $default-button-action-text-color;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    /*float: right;*/
+    margin: 10px 20px;
+
+    &:hover {
+      background-color: $default-button-action-hover-color;
+    }
+  }
+}

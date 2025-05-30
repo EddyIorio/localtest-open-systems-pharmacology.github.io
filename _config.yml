@@ -25,14 +25,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   and other life-sciences applications. Qualified and accepted by the scientific community 
   including academia, regulatory agencies and industry. Available free to everyone.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.localtest-open-systems-pharmacology.org" # the base hostname & protocol for your site, e.g. http://example.com
 base: open-systems-pharmacology.org # the base hostname & protocol for your site, e.g. http://example.com
 github: https://github.com/localtest-open-systems-pharmacology.github.io
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: kramdown
 gems:
   - jekyll-feed
 exclude:
